@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dossier technique · GSE</title>
+  <meta name="description" content="Bibliothèque de fiches techniques et génération des dossiers techniques (DOE) par chantier.">
+  <meta name="theme-color" content="#0b2342">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' blob: data:; connect-src https://www.googleapis.com https://oauth2.googleapis.com; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📂</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="entete">
+    <a class="marque" href="#/biblio" aria-label="Dossier technique GSE, accueil"><span class="logo-gse">GS</span><span class="nom-appli">Dossier technique</span></a>
+    <nav id="nav" aria-label="Sections"></nav>
+    <div id="compte"></div>
+  </header>
+  <main id="app"></main>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="vendor/pdf-lib.min.js"></script>
+  <script src="js/modele.js"></script>
+  <script src="js/doe.js"></script>
+  <script src="js/import.js"></script>
+  <script src="js/drive.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/vue-biblio.js"></script>
+  <script src="js/vue-chantier.js"></script>
+  <script src="js/vue-kits.js"></script>
+  <script src="js/vue-import.js"></script>
+  <script src="js/vue-reglages.js"></script>
+</body>
+</html>
